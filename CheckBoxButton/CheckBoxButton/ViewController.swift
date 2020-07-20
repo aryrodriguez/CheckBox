@@ -15,11 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
         let checkBox = CheckBox(frame: CGRect(x: 112, y: 340, width: 30, height: 30))
         checkBox.isChecked = false
         checkBox.addTarget(self, action: #selector(self.tapAction(checkbox:)), for: .valueChanged)
-
         let blackCheckBox = CheckBox(frame: CGRect(x: 152, y: 340, width: 30, height: 30))
         blackCheckBox.color = .black
         let greenCheckBox = CheckBox(frame: CGRect(x: 192, y: 340, width: 30, height: 30))
@@ -32,10 +30,6 @@ class ViewController: UIViewController {
         view.addSubview(blackCheckBox)
         view.addSubview(greenCheckBox)
         view.addSubview(redCheckBox)
-        
-        
-       
-        
     }
 
     @objc func tapAction(checkbox:CheckBox)

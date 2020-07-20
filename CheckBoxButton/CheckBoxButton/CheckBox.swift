@@ -31,7 +31,6 @@ class CheckBox: UIButton {
         }
     }
     
-
     override init(frame: CGRect) {
         isChecked = true
         color = UIButton().tintColor
@@ -46,8 +45,6 @@ class CheckBox: UIButton {
       setCheckedState()
     }
   
-   
-    
     private func setCheckedState()
     {
         backgroundColor = color
@@ -81,10 +78,5 @@ class CheckBox: UIButton {
         })
          self.isChecked.toggle()
     }
-    
-  
-
-    
-    
     
 }
