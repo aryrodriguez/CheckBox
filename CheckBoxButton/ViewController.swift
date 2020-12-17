@@ -37,14 +37,12 @@ class ViewController: UIViewController {
         
         let greenCheckBox = CheckBoxButton(frame: CGRect(x: 80, y: 350, width: 30, height: 30))
         greenCheckBox.color = .greenColor
-        
         greenCheckBox.addTarget(self, action: #selector(greenCheck(_:)), for: .valueChanged)
         
         
         let blueCheckBox = CheckBoxButton(frame: CGRect(x: 80, y: 400, width: 30, height: 30))
         blueCheckBox.color =  .blueColor
         blueCheckBox.addTarget(self, action: #selector(blueCheck(_:)), for: .valueChanged)
-        
         
         
         blackCheckBox.checkMark = .heavy
