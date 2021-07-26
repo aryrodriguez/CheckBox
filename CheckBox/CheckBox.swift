@@ -68,21 +68,12 @@ class CheckBox: UIControl {
     
     }
     
-    init(frame: CBRect) {
+    init(frame: CBRect, style: CheckBoxStyle = .square) {
         
         super.init(frame: CGRect(origin: frame.origin, size: CGSize(width: frame.size, height: frame.size)))
         self.size = frame.size
         configure()
         configureStyle()
-    }
-    
-    init(frame: CBRect, style: CheckBoxStyle ) {
-        super.init(frame: CGRect(origin: frame.origin, size: CGSize(width: frame.size, height: frame.size)))
-        self.size = frame.size
-        self.style = style
-        configure()
-        configureStyle()
-        
     }
     
     private func configure() {
